@@ -1,4 +1,4 @@
-package Study.JUC.classload.staticCls;
+package Study.JVM.classload.staticCls;
 
 /**
  * 从上向下按照顺序进行赋值

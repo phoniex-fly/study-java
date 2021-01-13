@@ -1,4 +1,4 @@
-package Study.JUC.classload.nonStaticCls;
+package Study.JVM.classload.nonStaticCls;
 
 public class Teacher {
 

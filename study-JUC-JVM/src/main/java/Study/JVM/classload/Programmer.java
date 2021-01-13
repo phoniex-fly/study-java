@@ -1,4 +1,4 @@
-package Study.JUC.classload;
+package Study.JVM.classload;
 
 /**
  * 类加载过程： 先初始化 后实例化

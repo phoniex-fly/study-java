@@ -1,4 +1,4 @@
-package Study.JUC.classload.staticCls.extandsTest;
+package Study.JVM.classload.staticCls.extandsTest;
 
 public class Fu {
 	static int a = getNum1();

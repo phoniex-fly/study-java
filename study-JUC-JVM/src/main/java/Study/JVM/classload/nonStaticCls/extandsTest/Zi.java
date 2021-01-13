@@ -1,4 +1,4 @@
-package Study.JUC.classload.nonStaticCls.extandsTest;
+package Study.JVM.classload.nonStaticCls.extandsTest;
 
 /**
  * 子类构造方法执行之前先调用父类构造方法

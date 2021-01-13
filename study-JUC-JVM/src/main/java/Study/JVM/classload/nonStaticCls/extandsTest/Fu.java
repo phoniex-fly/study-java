@@ -1,4 +1,4 @@
-package Study.JUC.classload.nonStaticCls.extandsTest;
+package Study.JVM.classload.nonStaticCls.extandsTest;
 
 public class Fu {
 	int a = 4;

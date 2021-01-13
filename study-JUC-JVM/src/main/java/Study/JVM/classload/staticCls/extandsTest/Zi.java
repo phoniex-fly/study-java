@@ -1,4 +1,4 @@
-package Study.JUC.classload.staticCls.extandsTest;
+package Study.JVM.classload.staticCls.extandsTest;
 
 /**
  * 加载子类前先加载父类
