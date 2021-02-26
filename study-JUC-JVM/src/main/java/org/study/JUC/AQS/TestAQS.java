@@ -12,7 +12,7 @@ class Mylock implements Lock{
 		@Override
 		protected boolean tryAcquire(int arg) {
 			if(compareAndSetState(0, 1)) {
-				setExclusiveOwnerThread(Thread.currentThread());
+//				setExclusiveOwnerThread(Thread.currentThread());
 				return true;
 			}
 			return false;
@@ -20,7 +20,7 @@ class Mylock implements Lock{
 
 		@Override
 		protected boolean tryRelease(int arg) {
-			setExclusiveOwnerThread(null);
+//			setExclusiveOwnerThread(null);
 			setState(0);//volitile
 			return true;
 		}
@@ -37,32 +37,26 @@ class Mylock implements Lock{
 	
 	private Mysync sync = new Mysync();
 
-	@Override
 	public void lock() {
 		sync.acquire(1);
 	}
 
-	@Override
 	public void lockInterruptibly() throws InterruptedException {
 		sync.acquireInterruptibly(1);
 	}
 
-	@Override
 	public boolean tryLock() {
 		return sync.tryAcquire(1);
 	}
 
-	@Override
 	public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
 		return sync.tryAcquireNanos(1, unit.toNanos(time));
 	}
 
-	@Override
 	public void unlock() {
 		sync.release(1);
 	}
 
-	@Override
 	public Condition newCondition() {
 		return sync.newCondition();
 	}
