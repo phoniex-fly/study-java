@@ -8,5 +8,6 @@
   	<module>study-DataStructure</module>
   	<module>study-DesignPattern</module>
   	<module>study-JUC-JVM</module>
+      <module>study-Refactoring</module>
   </modules>
 </project>
